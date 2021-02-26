@@ -1,0 +1,15 @@
+G04 Nombre el cargo, definir requerimientos, aprobar cosas
+Hay una clase de BLL (métodos) y otra de Entities (atributos) con el mismo nombre.
+SEPARAR POR RESPONSABILIDAD DE CAPAS.
+---Confección vinculado con Prenda.
+---Prenda debe tener un atributo tiempo de confección.
+---Corte_Id Borrar de Prenda.
+...Normalizar talles.
+--Al revés la cardinalidad entre Pedido Producción e Item.
+---Verificar diagrama de actividad para que cada uno de los procesos se pregunte si hay
+---algún producto semi elaborado. Si no tengo, lo mando a producir.
+Agregar calles.
+El extend va con la flecha para el otro lado en todos los casos
+Solicitar Producto se puede descomponer para que se produzca o se compre el material
+ necesario. Al gestionar producción se pueden gestionar la solicitud
+Bloqueo de Elemento (Más adelante).

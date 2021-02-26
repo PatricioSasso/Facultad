@@ -1,0 +1,292 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7e06ad7a-f745-4542-ab74-473862fdb2b6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ClusterCantidadAutos</ID>
+  <Name>ClusterCantidadAutos</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_ProspectiveBuyer</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8751" scrolltop="-3863" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23728" y="15769" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ProspectiveBuyer" left="-1335" top="-2393" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5900" height="9339" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000c1700007b240000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ProspectiveBuyer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-8751</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3863</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1335</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2393</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b1a4de4e-801e-486f-9631-f7f21a1b6c3b">
+    <DataSourceViewID>VistaADW2014</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a961b60f-a61a-4718-abf2-a4ea6f395f98">
+      <ID>Education</ID>
+      <Name>Education</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cd0f468-303e-4b02-a089-9caac08783b5">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9161c998-52a9-4510-8178-ccca9e46b588">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>Education</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="59bd02fb-9c39-44ef-baf4-c0fd6674f815">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1c584e1-1374-4baa-93a2-ef7588f8fad6">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="323d5c8c-1d3d-4caa-ac65-6acae881fbfc">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>Gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0c282bda-1dbf-48d7-b217-2c9e7e62f1e2">
+      <ID>House Owner Flag</ID>
+      <Name>House Owner Flag</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8fbcbc9b-3ce9-42b1-9db3-0ca2ce37911a">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e372688-e9f4-47e4-8ef4-30a0dbc5e5fb">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>HouseOwnerFlag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9259573c-5529-471b-a14d-f5f49bb47f59">
+      <ID>Marital Status</ID>
+      <Name>Marital Status</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23b453ad-df2f-46d9-bf52-8fbf3027b7ab">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a202778c-7e13-41c4-b443-a394425625a7">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>MaritalStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aa22acae-796a-4c09-8f9e-4ce043e5e2ed">
+      <ID>Number Cars Owned</ID>
+      <Name>Number Cars Owned</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02058f1f-260c-4a03-9c33-5f8b9e97ddd3">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f17d005e-67e8-4eaf-a448-fd36ec778013">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>NumberCarsOwned</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6e8f052a-f795-4b2a-a732-83f960205f25">
+      <ID>Occupation</ID>
+      <Name>Occupation</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cdbb764a-5338-4e05-95ec-d3c0c009f4d3">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="713178bf-2071-4522-a39f-8a0611868f06">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>Occupation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d9314629-0715-4343-81d7-596fe76df60f">
+      <ID>Prospective Buyer Key</ID>
+      <Name>Prospective Buyer Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa9b16a6-3fce-4c05-aff7-fa28849faa08">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12b7f959-b84b-4d8f-8690-8e498452ff97">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>ProspectiveBuyerKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fda1490b-7ced-4feb-bf36-286b74388251">
+      <ID>Total Children</ID>
+      <Name>Total Children</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c7b7bf81-6186-4d0e-8e11-5b714e02567b">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="294d6d54-5608-4ea4-b148-eeaae038b686">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>TotalChildren</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b410f686-7c97-4eee-a35c-d4b7f6efc1b4">
+      <ID>Yearly Income</ID>
+      <Name>Yearly Income</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6bab860-59c8-47d4-9bb7-d8b3d8921b3d">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30317f98-454d-4ae1-a924-1e63a4d80617">
+            <TableID>dbo_ProspectiveBuyer</TableID>
+            <ColumnID>YearlyIncome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="93415247-7dca-4f44-916b-aa18d6ae13b1">
+      <ID>Prospective Buyer</ID>
+      <Name>Prospective Buyer</Name>
+      <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>CLUSTER_COUNT</Name>
+          <Value xsi:type="xsd:int">4</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="72225399-ed0a-4c20-a0d0-caf1d341d738">
+          <ID>Education</ID>
+          <Name>Education</Name>
+          <SourceColumnID>Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b90ee60b-b973-4a79-91eb-601f59028706">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="88e69a6e-3bbd-43cf-8468-3ee9eb7f0927">
+          <ID>House Owner Flag</ID>
+          <Name>House Owner Flag</Name>
+          <SourceColumnID>House Owner Flag</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d4823ac0-a284-4f26-82eb-d73c2a55dd80">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e350c7c6-7783-48a9-ae2e-cce018ea2569">
+          <ID>Number Cars Owned</ID>
+          <Name>Number Cars Owned</Name>
+          <SourceColumnID>Number Cars Owned</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="f8892ecd-37ed-4b22-b8c0-db592da6d8ed">
+          <ID>Occupation</ID>
+          <Name>Occupation</Name>
+          <SourceColumnID>Occupation</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="095bb9d3-333e-453d-877e-e5e1dc9b1ba3">
+          <ID>Prospective Buyer Key</ID>
+          <Name>Prospective Buyer Key</Name>
+          <SourceColumnID>Prospective Buyer Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="3221245e-29ba-452d-938c-f04c60543c6b">
+          <ID>Total Children</ID>
+          <Name>Total Children</Name>
+          <SourceColumnID>Total Children</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d9ca9682-171e-400a-bea5-0c46603ad2ad">
+          <ID>Yearly Income</ID>
+          <Name>Yearly Income</Name>
+          <SourceColumnID>Yearly Income</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

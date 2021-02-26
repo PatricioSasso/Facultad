@@ -1,0 +1,6 @@
+IDEAS PARA CAMPO.
+
+1. Que prenda no tenga talle, en caso de necesitarse se aclara en el nombre // Yo adapto los detalles del talle.
+2. ¿Necesito un abm de prenda finalizada?
+3. En lugar de pedirle al cliente que ingrese lo que quiera modificar o dar de baja, mostrarle una lista de los objetos ya existentes.
+4. ¿Usar Mappers? // No está mal, pero fijate el tiempo

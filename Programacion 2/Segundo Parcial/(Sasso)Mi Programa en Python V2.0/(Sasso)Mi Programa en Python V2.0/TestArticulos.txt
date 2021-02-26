@@ -1,0 +1,4 @@
+D432,Producto A,300
+P324,Producto B,321
+K932,Producto C,919
+I211,Producto D,831

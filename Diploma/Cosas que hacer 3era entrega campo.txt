@@ -1,0 +1,15 @@
+// Implementacion
+//Hecho
+Aplicar Composite a Usuario - Rol - Permiso.
+Que la búsqueda de la bitácora no sea incremental por tema de recursos.
+Importacion a pdf
+Preparar el instalador
+Aplicar Tests de Integración.
+
+// Documentación
+// HECHO
+Manual de Instalación
+Modificar Diagramas
+Completar T04 ( Perfiles )
+Manual de Usuario
+Documentar Pruebas Unitarias y de Integración

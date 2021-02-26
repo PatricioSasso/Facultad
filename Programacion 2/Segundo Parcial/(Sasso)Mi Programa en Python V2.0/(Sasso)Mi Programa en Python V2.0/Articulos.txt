@@ -1,0 +1,2 @@
+A123,Producto 1,100
+Z123,Producto 2,200

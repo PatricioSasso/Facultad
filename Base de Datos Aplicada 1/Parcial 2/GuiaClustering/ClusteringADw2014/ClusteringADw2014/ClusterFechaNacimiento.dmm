@@ -1,0 +1,105 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="13e6f627-d8e5-47af-b4e3-2a007ebcd12f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ClusterFechaNacimiento</ID>
+  <Name>ClusterFechaNacimiento</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="50e0a016-d763-40fd-9990-22b01603a876">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>VistaADW2014</CubeID>
+    <CubeDimensionID>Due Date</CubeDimensionID>
+    <Filter></Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="19381dc7-89eb-43b0-a166-0773e7c20627">
+      <ID>Date Key</ID>
+      <Name>Date Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="40640029-00b8-48c7-9b0d-8de20e68dc19">
+        <CubeID>VistaADW2014</CubeID>
+        <CubeDimensionID>Due Date</CubeDimensionID>
+        <AttributeID>Date Key</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4360e76b-4298-4994-b50b-417891c1a776">
+      <ID>Sales Amount</ID>
+      <Name>Sales Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="ec709c35-4a22-4db2-b2d4-21fa9c0b18da">
+        <MeasureID>Sales Amount</MeasureID>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="c3ebb669-bc83-4a65-afd8-d51fe89cefd8">
+      <ID>Due Date</ID>
+      <Name>Due Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="7fc66edf-1155-4673-a55a-f080deb88816">
+          <ID>Date Key</ID>
+          <Name>Date Key</Name>
+          <SourceColumnID>Date Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="03132876-35ca-4343-a3cc-afc9bf07a219">
+          <ID>Sales Amount</ID>
+          <Name>Sales Amount</Name>
+          <SourceColumnID>Sales Amount</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

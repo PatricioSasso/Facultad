@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Practica2_LUGEjercicio2doParcial
+{
+    public partial class UserControl1 : UserControl
+    {
+        public UserControl1()
+        {
+            InitializeComponent();
+        }
+
+        bool isTextValid;
+
+        public bool IsTextValid 
+        { 
+            get 
+            {
+                Regex patron = new Regex(@"\d{2}/\d{2}/\d{4}");
+                return patron.IsMatch(textBox1.Text);
+            } 
+            set => isTextValid = value; 
+        }
+
+        public override string Text { get => textBox1.Text; set => textBox1.Text = value; }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

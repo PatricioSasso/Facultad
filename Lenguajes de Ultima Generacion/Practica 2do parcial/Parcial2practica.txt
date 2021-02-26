@@ -1,0 +1,33 @@
+BLL
+Class INMOBILIARIADUBA
+nombre
+total recaudado
+lista Inmubles
+
+ENTITY
+Inmueble:
+	id
+	Direccion
+	valor de venta
+	Fecha de publicacion 
+	Fecha de venta
+
+VISTA
+control de usuario con regex
+para reconecer id inmueble AAA-219
+y que direccion termine en 4 numeros
+
+BLL promedia Y VISTA muestra
+GDI:
+	grafico de torta para ver quien gano mas
+	grafico de barras para ver quien vendio mas sucursales
+
+4 capas BLL VISTA ENTITY DAL+ORM
+
+Falta
+Agregar Clases Vista
+Agegar algún evento x para practicar
+Grafico de torta y barra
+
+
+

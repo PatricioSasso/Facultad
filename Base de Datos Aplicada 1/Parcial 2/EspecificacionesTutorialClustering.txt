@@ -1,0 +1,3 @@
+Hay un usuario administrador creado bajo el nombre "lucas" con contraseña "123" (se especifica por la conexion
+a la base de datos, debería cambiarse eso)
+Base de datos usada: AdventureWorksDataWarehouse2014
